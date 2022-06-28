@@ -7,6 +7,7 @@ use Illuminate\View\Component;
 class HeroComponent extends Component
 {
 
+    public $menu;
     public $titleSliceOne;
     public $titleSliceTwo;
     public $text;
@@ -21,8 +22,9 @@ class HeroComponent extends Component
      *
      * @return void
      */
-    public function __construct($titleSliceOne, $titleSliceTwo, $text, $buttonPrimary, $buttonGhost, $imageId = null)
+    public function __construct($menu, $titleSliceOne, $titleSliceTwo, $text, $buttonPrimary, $buttonGhost, $imageId = null)
     {
+        $this->menu = $menu;
         $this->titleSliceOne = $titleSliceOne;
         $this->titleSliceTwo = $titleSliceTwo;
         $this->text = $text;
