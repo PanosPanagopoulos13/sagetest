@@ -19,3 +19,6 @@ const main = async (err) => {
  */
 domReady(main);
 import.meta.webpackHot?.accept(main);
+
+import AOS from "aos/dist/aos";
+AOS.init();

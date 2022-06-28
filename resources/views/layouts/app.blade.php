@@ -15,3 +15,4 @@
   @endif
 
 @include('sections.footer')
+@yield('pagefooterjs')

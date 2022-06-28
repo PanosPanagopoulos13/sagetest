@@ -3,6 +3,7 @@
 namespace App\View\Composers;
 
 use Roots\Acorn\View\Composer;
+use App\Models\Post;
 
 class HomepageComposer extends Composer
 {
@@ -22,7 +23,9 @@ class HomepageComposer extends Composer
      */
     public function with()
     {
-
+        //todo
+        $mypost = new Post( get_post(get_the_ID()) );
+        
         return [
             'data' => [
                 'titleSliceOne' => get_field('title_slice_one',get_the_ID()) ?? 'title',

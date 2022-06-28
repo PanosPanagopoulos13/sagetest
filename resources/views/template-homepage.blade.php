@@ -21,7 +21,7 @@
     class="bg-color-red text-color-white"
   />
 
-<div class="bg-indigo-400" style="padding:75px"></div>
+<div class="bg-indigo-400" style="padding:200px 0"></div>
 
 <x-hero-component 
     :menu="$menus['primary_navigation']"
@@ -34,4 +34,7 @@
     class="bg-color-red text-color-white"
 />
   
+@endsection
+
+@section('pagefooterjs')
 @endsection
